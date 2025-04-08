@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FirstGameProject.Scene
+namespace FirstGameProject
 {
-    class TestScene : BaseScene
+    class Interactable
     {
-        private ConsoleKey 
+        public void Interact(Player player);
     }
 }

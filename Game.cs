@@ -40,7 +40,7 @@ namespace FirstGameProject
 
             sceneDic = new Dictionary<string, BaseScene>();
             sceneDic.Add("Title", new TitleScene());
-            sceneDic.Add("")
+            sceneDic.Add("StartPieldGrassland", new );
             sceneDic.Add("")
             sceneDic.Add("")
             sceneDic.Add("")
@@ -52,7 +52,11 @@ namespace FirstGameProject
 
         private static void ChangeScene(string sceneName)
         {
+            prevSceneName = curScene.name;
+
+            curScene.Exit();
             curScene = sceneDic[sceneName];
+            curScene.Enter();
         }
 
         private static void End()
