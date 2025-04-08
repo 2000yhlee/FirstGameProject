@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace FirstGameProject
 {
-    public class BaseScene
+    public abstract class BaseScene
     {
-        public void Render() { }
-        public void Input() { }
-        public void Update() { }
-        public void Result() { }
+        public abstract void Render();
+        public abstract void Input();
+        public abstract void Update();
+        public abstract void Result();
 
     }
 }

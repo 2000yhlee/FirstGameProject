@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FirstGameProject
+namespace FirstGameProject.Scene
 {
-    class Program
+    class TestScene : BaseScene
     {
-        static void Main(string[] args)
-        {
-
-        }
+        private ConsoleKey 
     }
 }

@@ -13,17 +13,7 @@ namespace FirstGameProject
         private static Dictionary<string, BaseScene> sceneDic;
         private static BaseScene curScene;
 
-        private static bool gameOver;
-
-        private static void Start()
-        {
-            gameOver = false;
-
-            sceneDic = new Dictionary<string, BaseScene>();
-            sceneDic.Add("Title", new TitleScene());
-
-            curScene = sceneDic["Title"];
-        }
+        private static bool gameOver;        
 
         public static void Run()
         {
@@ -33,12 +23,36 @@ namespace FirstGameProject
             {
                 Console.Clear();
                 curScene.Render();
+                Console.WriteLine();
                 curScene.Input();
+                Console.WriteLine();
                 curScene.Update();
+                Console.WriteLine();
                 curScene.Render();
             }
 
             End();
+        }
+
+        private static void Start()
+        {
+            gameOver = false;
+
+            sceneDic = new Dictionary<string, BaseScene>();
+            sceneDic.Add("Title", new TitleScene());
+            sceneDic.Add("")
+            sceneDic.Add("")
+            sceneDic.Add("")
+            sceneDic.Add("")
+            sceneDic.Add("")
+            sceneDic.Add("")
+
+            curScene = sceneDic["Title"];
+        }
+
+        private static void ChangeScene(string sceneName)
+        {
+            curScene = sceneDic[sceneName];
         }
 
         private static void End()
